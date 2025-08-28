@@ -85,7 +85,8 @@ precios = [15.99, 39.99, 129.99, 42.50]
 existencias = [25, 10, 7, 14]
 
 for i in range(len(productos)):
-    print(f"{productos[i]} - ${precios[i]} - Stock: {existencias[i]}")
+    print(f"{productos[i]} | ${precios[i]} | Stock: {existencias[i]} | valor total del inventario {precios[i]*existencias[i]}")
+    print("="*40)
 
 
 
