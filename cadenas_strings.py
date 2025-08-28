@@ -62,21 +62,34 @@
 
 # print(numeros)
 
-print("operaciones matematicas!, veremos ejemplos de suma, resta, multiplicar y dividir")
-print("ingresa 2 numeros para ver los ejemplos")
-numero1 = float(input("numero 1: "))
-numero2 = float(input("numero 2: "))
+# print("operaciones matematicas!, veremos ejemplos de suma, resta, multiplicar y dividir")
+# print("ingresa 2 numeros para ver los ejemplos")
+# numero1 = float(input("numero 1: "))
+# numero2 = float(input("numero 2: "))
 
-suma = numero1+numero2
-resta = numero1-numero2
-multiplicacion = numero1*numero2
-division = numero1/numero2
+# suma = numero1+numero2
+# resta = numero1-numero2
+# multiplicacion = numero1*numero2
+# division = numero1/numero2
 
-print("esto es lo que puedes hacer con tus numeros!")
-print("con sumas los numeros: ", numero1," + ",numero2, " es: ",suma)
-print("con resta los numeros: ", numero1," + ",numero2, " es: ",resta)
-print("con multiplicacion los numeros: ", numero1," + ",numero2, " es: ",multiplicacion)
-print("con division los numeros: ", numero1," + ",numero2, " es: ",division)
+# print("esto es lo que puedes hacer con tus numeros!")
+# print("con sumas los numeros: ", numero1," + ",numero2, " es: ",suma)
+# print("con resta los numeros: ", numero1," + ",numero2, " es: ",resta)
+# print("con multiplicacion los numeros: ", numero1," + ",numero2, " es: ",multiplicacion)
+# print("con division los numeros: ", numero1," + ",numero2, " es: ",division)
+
+print("bienvenido al inventario esclavo de la sociedad, este es nuestro inventario (●'◡'●).")
+
+productos = ["Mouse inalámbrico", "Teclado mecánico", "Monitor LG 24''", "Disco SSD 480GB"]
+precios = [15.99, 39.99, 129.99, 42.50]
+existencias = [25, 10, 7, 14]
+
+for i in range(len(productos)):
+    print(f"{productos[i]} - ${precios[i]} - Stock: {existencias[i]}")
+
+
+
+
 
 
 
