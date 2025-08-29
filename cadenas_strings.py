@@ -78,18 +78,43 @@
 # print("con multiplicacion los numeros: ", numero1," + ",numero2, " es: ",multiplicacion)
 # print("con division los numeros: ", numero1," + ",numero2, " es: ",division)
 
-print("bienvenido al inventario esclavo de la sociedad, este es nuestro inventario (●'◡'●).")
+# print("bienvenido al inventario esclavo de la sociedad, este es nuestro inventario (●'◡'●).")
 
-productos = ["Mouse inalámbrico", "Teclado mecánico", "Monitor LG 24''", "Disco SSD 480GB"]
-precios = [15.99, 39.99, 129.99, 42.50]
-existencias = [25, 10, 7, 14]
+# productos = ["Mouse inalámbrico", "Teclado mecánico", "Monitor LG 24''", "Disco SSD 480GB"]
+# precios = [15.99, 39.99, 129.99, 42.50]
+# existencias = [25, 10, 7, 14]
 
-for i in range(len(productos)):
-    print(f"{productos[i]} | ${precios[i]} | Stock: {existencias[i]} | valor total del inventario {precios[i]*existencias[i]}")
-    print("="*40)
+# for i in range(len(productos)):
+#     print(f"{productos[i]} | ${precios[i]} | Stock: {existencias[i]} | valor total del inventario: ${precios[i]*existencias[i]:.2f}")
+#     print("="*40)
+
+# class Mago:
+#     def __init__(self, nombre, hp, energia):
+#         self.nombre = nombre
+#         self.hp = hp
+#         self.energia = energia
+        
+
+#     def mostrar_nombre(self):
+#         print(f"El nombre del mago es {self.nombre}")
+#         print(f"sus puntos de vida son: {self.hp} HP")
+#         print(f"sus puntos de energia son {self.energia} EP")
+
+# # Crear un objeto de la clase Mago
+# mago1 = Mago("Gandalf", hp=100, energia=10)
+# mago1.mostrar_nombre()
+
+from Producto import Sandwish
+
+# Ejemplo de uso, tiene un nombre de pan, precio y multiples ingredientes en un arreglo
+# nombre de la funcion: pedido
 
 
+s = Sandwish("Pollo BBQ", 150, ["pollo", "barbacoa", "queso", "lechuga"])
+s.pedido()
 
+mi_sandwish = Sandwish("Carne Queso", 20000,["carne","queso","pan blanco"])
+mi_sandwish.pedido()
 
 
 
